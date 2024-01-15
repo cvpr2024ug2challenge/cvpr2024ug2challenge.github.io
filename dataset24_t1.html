@@ -65,7 +65,7 @@
         <div class="container" style="width:100%">
           <div class="row"  style="padding: 40px 40px 0px 40px">
             <div class="col-sm-6 col-sm-offset-3">
-              <h2 class="module-title font-alt" style="margin: 0 0 20px">A2I2 Haze Dataset</h2>
+              <h2 class="module-title font-alt" style="margin: 0 0 20px">[Name of Dataset]</h2>
               <!-- <h3 class="module-subtitle font-serif" style="margin: 0 0 20px"> -->
                 <!-- <a href="#subchallenge1" class="section-scroll btn btn-border-w btn-round">Sub-Challenge 1</a> -->
                 <!-- <a href="#subchallenge2" class="section-scroll btn btn-border-w btn-round">Sub-Challenge 2</a> -->
@@ -87,26 +87,19 @@
               <div class="work-details">
                 <h4 class="work-details-title font-alt">About the Dataset</h4>
                 <p>
-                  Our challenge is based on the A2I2-Haze, the first real haze dataset with in-situ smoke measurement aligned to aerial and ground imagery.
+                  [1/2 sentence summary and a PDF (if applicable)]
                   <!-- Each challenge features a different poor-visibility outdoor condition, -->
                   <!-- and diverse training protocols (paired versus unpaired images, annotated versus unannotated, etc.). -->
                 </p>
 
                 <!-- TODO -->
 <!--                 <div>
- -->                  <p><ul><li>Dataset and baseline report: <span class="font-serif"><a href="https://arxiv.org/pdf/2206.06427.pdf" target="_blank">A2I2-Haze.pdf</a></span></li></ul></p>
+ -->                  <p><ul><li>Dataset and baseline report: <span class="font-serif"><a href="https://arxiv.org/pdf/2206.06427.pdf" target="_blank">your_link_here.pdf</a></span></li></ul></p>
                 <!-- </div> -->
                 <h5 class="work-details-title font-alt">Training & Evaluation</h5>
 
                 <p>
-                  We provide a total of 177 paired hazy/clean frame images clipped from 12 videos. We also release another set of 240 annotated clean images collected from the same sources (and containing the same classes of vehicles), which could be used at the participants’ will to train a good vehicle detector.
-                  This training data is labeled, and the participating teams will be allowed to use any extra labeled/unlabeled training data,
-                  <b>but they must state so in their submissions ("Method description" section in Codalab)</b>.
-                  Imagery and metadata were collected from aerial, ground platforms, and stationary sensors.
-                  The target objects are civilian vehicles. All the other objects including mannequins, and man-made obstacles such as traffic cones, barriers, barricades, etc will NOT be used in the object detection evaluation, since they are too difficult to detection due to small size and lack of training data.
-                  The ranking criteria will be the Mean average precision (mAP) on each testing set, with Interception-of-Union (IoU) threshold as 0.5.
-                  If the ratio of the intersection of a detected region with an annotated face region is greater than 0.5, a score of 1 is assigned to the detected region,
-                  and 0 otherwise. When mAPs with IoU as 0.5 are equal, the mAPs with higher IoUs (0.6, 0.7, 0.8) will be compared sequentially.
+                  Details
                 </p>
 
                 <!-- <h4 class="work-details-title font-alt" id='subchallenge1'>Sub-Challenge 1.1: Object Detection in the Hazy Condition</h4> -->
@@ -119,17 +112,17 @@
                 <!-- </p> -->
                 <ul style="padding-left: 20px">
                   <li>
-                    <strong>Release Date: </strong><span class="font-serif">January, 2023</span>
+                    <strong>Release Date: </strong><span class="font-serif">January, 2024</span>
                   </li>
                   <li>
                     <strong>Download Training Data: </strong>
-                    <span class="font-serif"><a style="color: #337ab7;"  href="https://drive.google.com/drive/folders/12T7VR0Mo95DrUsxrFF8ivJeCOugERWxN?usp=sharing">Google Drive Link</a></span>
+                    Link
                     <!-- &nbsp;&nbsp; -->
                     <!-- <span class="font-serif"><a style="color: #337ab7; text-decoration: underline" href="" target="_blank"><s>Baidu Wangpan Link</s></a></span> -->
                   </li>
                   <li>
                     <strong>Download Dry-run data:</strong>
-                    <span class="font-serif"><a style="color: #337ab7; "  href="https://drive.google.com/drive/folders/1qC6pAtph6SjrPXKH4caXRuCirP38a2ny?usp=sharing">Google drive link</a></span>
+                    Link
                     <!-- &nbsp;&nbsp; -->
                     <!-- <span class="font-serif"><a style="color: #337ab7; text-decoration: underline" href="" target="_blank"><s>Baidu Wangpan Link</s></a></span> -->
                   </li>
@@ -141,23 +134,16 @@
                   </li> -->
                   <li>
                     <strong>Submission Format Example:</strong>
-                    <span class="font-serif"><a style="color: #337ab7;"  href="https://drive.google.com/file/d/1g_NGUEuCr2m7zsExQsKeXEbd4eSD7YGQ/view?usp=sharing">Google drive link</a></span>
-                    &nbsp;&nbsp;
-                    <span class="font-serif"><a style="color: #337ab7; text-decoration: underline" href="https://pan.baidu.com/s/1upgmiGbyoQEFvXlCYWVcjg" target="_blank"><s>Baidu Wangpan Link</s></a></span>
+                    Link
                   </li>
                   <li>
                     <strong>Download Test images:</strong>
-                    <span class="font-serif"><a style="color: #337ab7; text-decoration: underline" href="https://drive.google.com/drive/folders/1_qJqXxbyBe1wnSm-8pHvDm-PU6tXtgKU?usp=sharing" target="_blank">Google drive link</a></span>
-                    &nbsp;&nbsp;
-                  </li>
-                  <li>
-<!--                     <strong>Codalab: </strong><span class="font-serif"><a style="color: #337ab7; text-decoration: underline" target="_blank" href="https://competitions.codalab.org/competitions/?????">https://competitions.codalab.org/competitions/????</a></span> -->
-                    <strong>Codalab: </strong><span class="font-serif"><a style="color: #337ab7; text-decoration: underline" target="_blank" href="https://codalab.lisn.upsaclay.fr/competitions/9802">CodaLab Link</a></span>
+                    Link
                   </li>
                 </ul>
 
                 <p style="text-align: justify;">
-                  If you have any questions about this challenge track please feel free to email <a style="color: #337ab7; text-decoration: underline" href="mailto:cvpr2023.ug2challenge@gmail.com">cvpr2023.ug2challenge@gmail.com</a>
+                  If you have any questions about this challenge track please feel free to email <a style="color: #337ab7; text-decoration: underline" href="mailto:cvpr2024.ug2challenge@gmail.com">cvpr2024.ug2challenge@gmail.com</a>
                 </p>
 
               </div>
