@@ -157,31 +157,31 @@
           <div class="container">
             <div class="row multi-columns-row">
               <!-- <p class="module-title font-alt" style="margin: 0 0 20px">The Dataset</p> -->
-              <div class="col-sm-4 col-md-3 col-lg-3">
+              <div class="col-sm-3 col-md-4 col-lg-4">
                 <div class="count-item mb-sm-40">
                   <div class="count-icon"><span class="icon-target"></span></div>
-                  <h3 class="count-to font-alt" data-countto="3"></h3>
+                  <h3 class="count-to font-alt" data-countto="5"></h3>
                   <h5 class="count-title font-serif">Challenge Categories</h5>
                 </div>
               </div>
-              <div class="col-sm-4 col-md-3 col-lg-3">
+              <div class="col-sm-3 col-md-4 col-lg-4">
                 <div class="count-item mb-sm-40">
                   <div class="count-icon"><span class="fa fa-users"></span></div>
                   <h3 class="count-to font-alt" data-countto="3"></h3>
                   <h5 class="count-title font-serif">Winners</h5>
                 </div>
               </div>
-              <div class="col-sm-4 col-md-3 col-lg-3">
+              <!-- <div class="col-sm-4 col-md-3 col-lg-3">
                 <div class="count-item mb-sm-40">
                   <div class="count-icon"><span class="fas fa-trophy"></span></div>
                   <h3 class="font-alt">$<b class="count-to" data-countto="3"></b>K</h3>
                   <h5 class="count-title font-serif">Awarded in prizes</h5>
                 </div>
-              </div>
-              <div class="col-sm-4 col-md-3 col-lg-3">
+              </div> -->
+              <div class="col-sm-3 col-md-4 col-lg-4">
                 <div class="count-item mb-sm-40">
                   <div class="count-icon"><span class="fas fa-microphone"></span></div>
-                  <h3 class="count-to font-alt" data-countto="8"></h3>
+                  <h3 class="count-to font-alt" data-countto="4"></h3>
                   <h5 class="count-title font-serif">Keynote speakers</h5>
                 </div>
               </div>
@@ -202,7 +202,7 @@
                       <div class="row">
                         <div class="col-md-4 col-sm-4 col-xs-8">
                           <div class="alt-features-item">
-                            <a href="track1.html"><div class="alt-features-icon"><span class="fas fa-cloud-moon"></span></div>
+                            <a href="track1.html"><div class="alt-features-icon"><span class="fas fa-cloud"></span></div>
                             <h3 class="alt-features-title font-alt">Object Detection in Haze</h3></a>
                             <p>While most current vision systems are designed to perform in environments where the subjects are well observable without (significant) attenuation or alteration, a dependable vision system must reckon with the entire spectrum of complex unconstrained and dynamic degraded outdoor environments. It is highly desirable to study to what extent, and in what sense, such challenging visual conditions can be coped with, for the goal of achieving robust visual sensing.</p>
                             <!-- TODO -->
@@ -231,13 +231,47 @@
                         </div>
                         <div class="col-md-4 col-sm-4 col-xs-8">
                           <div class="alt-features-item"> 
-                            <a href="track3.html"><div class="alt-features-icon"><fa class="fas fa-cloud-sun-rain"></fa></div>
-                            <h3 class="alt-features-title font-alt">Single Image Deraining</h3></a>
+                            <a href="track3.html"><div class="alt-features-icon"><fa class="fas fa-cloud-moon"></fa></div>
+                              <h3 class="alt-features-title font-alt">All weather semantic segmentation</h3></a>
                             <p>
-                              Images captured in adverse weather conditions significantly impact the performance of many vision tasks. Rain is a common weather phenomenon that introduces visual degradations to captured images and videos through partial occlusions of objects – in heavy rain, severe occlusion to the background. As most vision algorithms assume clear weather, with no interference of rain, their performance suffers. Deraining is the task of removing such visual degradations so that the images are better suited to the assumptions of downstream vision algorithms, as well as for aesthetic fruition. 
+                              Images captured in adverse weather conditions significantly impact the performance of many vision tasks. Common weather phenomenon, including but not limited to rain, snow, fog, introduce visual degradations to captured images and videos. These degradations may include partial to severe occlusions of objects, illumination changes, noise, etc. As most vision algorithms assume clear weather, with no interference of particles present under adverse weather, their performance suffers due to the domain gap. 
                             </p>
                             <p>
-                              This challenge aims to spark innovative ideas that will push the envelope of single image deraining on real images. 
+                              This challenge aims to spark the development of novel semantic segmentation algorithms for images captured under adverse weather conditions.
+                            </p>
+                            <!-- <h4>Sub-Challenges</h4>
+                            <ol>
+                              <b><li>Fully Supervised Action Recognition in the Dark</li></b>
+                              <b><li>Semi-supervised Action Recognition in the Dark</li></b>
+                            </ol> -->
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-8">
+                          <div class="alt-features-item"> 
+                            <a href="track4.html"><div class="alt-features-icon"><fa class="fas fa-cloud-moon"></fa></div>
+                            <h3 class="alt-features-title font-alt">3D Smokey Reconstruction</h3></a>
+                            <p>
+                              Computer vision in low visibility is a problem that faces many challenges and remains largely open. Amplitude scattering provides a unique challenge in visibility because of the amount of ambient light present in the scene which is depth-dependent. In the case of self-driving cars or commercial UAVs, the ability of an optical system to see “through” the haze or fog present in real-world imaging is critical for making decisions which have significant impact on safety.
+                            </p>
+                            <p>
+                              This challenge aims to promote development of accurate and efficient 3D reconstructions in the presence of amplitude scattering.
+                            </p>
+                            <!-- <h4>Sub-Challenges</h4>
+                            <ol>
+                              <b><li>Fully Supervised Action Recognition in the Dark</li></b>
+                              <b><li>Semi-supervised Action Recognition in the Dark</li></b>
+                            </ol> -->
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-8">
+                          <div class="alt-features-item"> 
+                            <a href="track5.html"><div class="alt-features-icon"><fa class="fas fa-helicopter"></fa></div>
+                            <h3 class="alt-features-title font-alt">UAV Tracking and Pose Estimation</h3></a>
+                            <p>
+                              Recently, UAVs have become a major concern in frontline combat, contraband smuggling, and the endangerment of commercial aircraft, among other areas. Due to their compact size and quiet electric motors, they are difficult to detect by soldiers, law-enforcement and vehicles. 
+                            </p>
+                            <p>
+                              This challenge is positioned to play a pivotal role in advancing UAV threat detection, classification, trajectory estimation capabilities, and more.
                             </p>
                             <!-- <h4>Sub-Challenges</h4>
                             <ol>
@@ -263,95 +297,58 @@
             <div class="row same-size-parent">
               <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-6 col-xs-6" onclick="wow fadeInUp" style="padding: 40px 0px 40px 0px;">
                 <div class="team-item">
-                  <div class="team-image"><img src="assets/images/Jong_Chul_Ye.png" alt="Speaker Photo" style="width:70%"/>
+                  <div class="team-image"><img src="assets/images/xiaoming_liu.jpg" alt="Speaker Photo" style="width:70%"/>
                     <div class="team-detail">
-                      <div class="team-social"><a href="https://bispl.weebly.com/professor.html" target="_blank"><i class="fas fa-globe"></i></a><a href="https://scholar.google.com/citations?user=HNMjoNEAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
+                      <div class="team-social"><a href="https://www.cse.msu.edu/~liuxm/index2.html" target="_blank"><i class="fas fa-globe"></i></a><a href="https://scholar.google.com/citations?user=Bii0w1oAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
                     </div>
                   </div>
                   <div class="team-descr font-alt">
-                    <div class="team-name">Jong Chul Ye</div>
-                    <div class="team-role">Korea Advanced Institute of Science & Technology</div>
+                    <div class="team-name">Xiaoming Liu</div>
+                    <div class="team-role">Michigan State University</div>
                   </div>
                 </div>
               </div>
               <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-6 col-xs-6" onclick="wow fadeInUp" style="padding: 40px 0px 40px 0px;">
                 <div class="team-item">
-                  <div class="team-image"><img src="assets/images/Sabine_Susstrunk.png" alt="Speaker Photo" style="width:70%"/>
+                  <div class="team-image"><img src="assets/images/Achuta_Kadambi.png" alt="Speaker Photo" style="width:70%"/>
                     <div class="team-detail">
-                      <div class="team-social"><a href="https://people.epfl.ch/sabine.susstrunk?lang=en" target="_blank"><i class="fas fa-globe"></i></a><a href="https://scholar.google.com/citations?user=EX3OYP4AAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
+                      <div class="team-social"><a href="https://visual.ee.ucla.edu/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=UMzWJikAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
                     </div>
                   </div>
                   <div class="team-descr font-alt">
-                    <div class="team-name">Sabine Süsstrunk</div>
-                    <div class="team-role">EPFL</div>
+                    <div class="team-name">Achuta Kadambi</div>
+                    <div class="team-role">University of California, Los Angeles</div>
                   </div>
                 </div>
               </div>
               <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-6 col-xs-6" onclick="wow fadeInUp" style="padding: 40px 0px 40px 0px;">
                 <div class="team-item">
-                  <div class="team-image"><img src="assets/images/Jinwei_Gu.png" alt="Speaker Photo" style="width:70%"/>
+                  <div class="team-image"><img src="assets/images/kristina_monakhova.jpg" alt="Speaker Photo" style="width:70%"/>
                     <div class="team-detail">
-                      <div class="team-social"><a href="https://www.gujinwei.org/" target="_blank"><i class="fas fa-globe"></i></a><a href="https://scholar.google.com/citations?user=k_T8t30AAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
+                      <div class="team-social"><a href="https://kristinamonakhova.com/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=X71o1ykAAAAJ&hl" target="_blank"><i class="fab fa-google"></i></a></div>
                     </div>
                   </div>
                   <div class="team-descr font-alt">
-                    <div class="team-name">Jinwei Gu</div>
-                    <div class="team-role">The Chinese University of Hong Kong</div>
+                    <div class="team-name">Kristina Monakhova</div>
+                    <div class="team-role">Cornell University</div>
                   </div>
                 </div>
               </div>
               <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-6 col-xs-6" onclick="wow fadeInUp" style="padding: 40px 0px 40px 0px;">
                 <div class="team-item">
-                  <div class="team-image"><img src="assets/images/Vishal_Patel.jpg" alt="Speaker Photo" style="width:70%"/>
+                  <div class="team-image"><img src="assets/images/blank.png" alt="Speaker Photo" style="width:70%"/>
                     <div class="team-detail">
-                      <div class="team-social"><a href="https://engineering.jhu.edu/vpatel36/" target="_blank"><i class="fas fa-globe"></i></a><a href="https://scholar.google.com/citations?user=AkEXTbIAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
+                      <div class="team-social"><a href=" " target="_blank"><i class="fa fa-globe"></i></a><a href=" " target="_blank"><i class="fab fa-google"></i></a></div>
                     </div>
                   </div>
                   <div class="team-descr font-alt">
-                    <div class="team-name">Vishal M. Patel</div>
-                    <div class="team-role">Johns Hopkins University</div>
+                    <div class="team-name">TBA</div>
+                    <div class="team-role"> </div>
                   </div>
                 </div>
               </div>
-              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-6 col-xs-6" onclick="wow fadeInUp" style="padding: 40px 0px 40px 0px;">
-                <div class="team-item">
-                  <div class="team-image"><img src="assets/images/Nianyi_Li.png" alt="Speaker Photo" style="width:70%"/>
-                    <div class="team-detail">
-                      <div class="team-social"><a href="https://nianyil.people.clemson.edu/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=3SqliH4AAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
-                    </div>
-                  </div>
-                  <div class="team-descr font-alt">
-                    <div class="team-name">Nianyi Li</div>
-                    <div class="team-role">Clemson University</div>
-                  </div>
-                </div>
-              </div>
-              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-6 col-xs-6" onclick="wow fadeInUp" style="padding: 40px 0px 40px 0px;">
-                <div class="team-item">
-                  <div class="team-image"><img src="assets/images/Tianfan_Xue.png" alt="Speaker Photo" style="width:70%"/>
-                    <div class="team-detail">
-                      <div class="team-social"><a href="https://tianfan.info/" target="_blank"><i class="fas fa-globe"></i></a><a href="https://scholar.google.com/citations?user=RfSQKrIAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
-                    </div>
-                  </div>
-                  <div class="team-descr font-alt">
-                    <div class="team-name">Tianfan Xue</div>
-                    <div class="team-role">The Chinese University of Hong Kong</div>
-                  </div>
-                </div>
-              </div>
-              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-6 col-xs-6" onclick="wow fadeInUp" style="padding: 40px 0px 40px 0px;">
-                <div class="team-item">
-                  <div class="team-image"><img src="assets/images/Emma_Alexander.jpg" alt="Speaker Photo" style="width:70%"/>
-                    <div class="team-detail">
-                      <div class="team-social"><a href="https://www.alexander.vision/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=9xN3AFkAAAAJ" target="_blank"><i class="fab fa-google"></i></a></div>
-                    </div>
-                  </div>
-                  <div class="team-descr font-alt">
-                    <div class="team-name">Emma Alexander</div>
-                    <div class="team-role">Northwestern University</div>
-                  </div>
-                </div>
-              </div>
+
+
             </div>
           </div>
         </section>
@@ -443,7 +440,7 @@
                 <!-- dummy div balancing space -->
               <!-- </div> -->
 
-              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 20%" onclick="wow fadeInUp" >
+              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 16%" onclick="wow fadeInUp" >
                 <div class="team-item">
                   <div class="team-image"><img src="assets/images/schan.png" alt="Speaker Photo" style="width:75%"/>
                     <div class="team-detail">
@@ -460,7 +457,7 @@
 
 
               <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
-              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 20%" onclick="wow fadeInUp" >
+              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 16%" onclick="wow fadeInUp" >
                 <div class="team-item">
                   <div class="team-image"><img src="assets/images/zwang.jpg" alt="Speaker Photo" style="width:75%"/>
                     <div class="team-detail">
@@ -475,7 +472,7 @@
               </div>
 
               <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
-              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 20%" onclick="wow fadeInUp" >
+              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 16%" onclick="wow fadeInUp" >
                 <div class="team-item">
                   <div class="team-image"><img src="assets/images/Achuta_Kadambi.png" alt="Speaker Photo" style="width:75%"/>
                     <div class="team-detail">
@@ -490,7 +487,7 @@
               </div>
 
               <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
-              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 20%" onclick="wow fadeInUp" >
+              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 16%" onclick="wow fadeInUp" >
                 <div class="team-item">
                   <div class="team-image"><img src="assets/images/Alex_Wong.jpg" alt="Speaker Photo" style="width:75%"/>
                     <div class="team-detail">
@@ -504,61 +501,31 @@
                 </div>
               </div>
 
-              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 20%" onclick="wow fadeInUp" >
+              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 16%" onclick="wow fadeInUp" >
                 <div class="team-item">
-                  <div class="team-image"><img src="assets/images/Kevin_Miller.png" alt="Speaker Photo" style="width:75%"/>
+                  <div class="team-image"><img src="assets/images/yung-hsiang_lu2.png" alt="Speaker Photo" style="width:75%"/>
                     <div class="team-detail">
-                      <div class="team-social"><a href="https://scholar.google.com/citations?user=zV1R5fAAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
+                      <div class="team-social"><a href="https://yhlu.net/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=aORND2cAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
                     </div>
                   </div>
                   <div class="team-descr font-alt">
-                    <div class="team-name">Kevin J. Miller</div>
+                    <div class="team-name">Yung-Hsiang Lu</div>
                     <div class="team-role">US Army</div>
                   </div>
                 </div>
               </div>
 
               <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
-              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 21%" onclick="wow fadeInUp" >
+              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 16%" onclick="wow fadeInUp" >
                 <div class="team-item">
-                  <div class="team-image"><img src="assets/images/jliu.jpg" alt="Speaker Photo" style="width:75%"/>
+                  <div class="team-image"><img src="assets/images/blank.png" alt="Speaker Photo" style="width:75%"/>
                     <div class="team-detail">
-                      <div class="team-social"><a href="http://www.icst.pku.edu.cn/struct/people/liujiaying.html" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=-OcSne0AAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
+                      <div class="team-social"><a href="https://scholar.google.com/citations?user=QJax3VMAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
                     </div>
                   </div>
                   <div class="team-descr font-alt">
-                    <div class="team-name">Jiaying Liu</div>
+                    <div class="team-name">Bradley Preece</div>
                     <div class="team-role">Peking University</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
-              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 19%" onclick="wow fadeInUp" >
-                <div class="team-item">
-                  <div class="team-image"><img src="assets/images/wscheirer.jpg" alt="Speaker Photo" style="width:75%"/>
-                    <div class="team-detail">
-                      <div class="team-social"><a href="https://www.wjscheirer.com/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=dlV-qnUAAAAJ&hl=en&oi=ao" target="_blank"><i class="fab fa-google"></i></a></div>
-                    </div>
-                  </div>
-                  <div class="team-descr font-alt">
-                    <div class="team-name">Walter J. Scheirer</div>
-                    <div class="team-role">University of Notre Dame</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
-              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 20%" onclick="wow fadeInUp" >
-                <div class="team-item">
-                  <div class="team-image"><img src="assets/images/wren.png" alt="Speaker Photo" style="width:75%"/>
-                    <div class="team-detail">
-                      <div class="team-social"><a href="https://sites.google.com/view/wenqiren/homepage" target="_blank"><i class="fa fa-globe"></i></a><a href="http://scholar.google.com/citations?user=VwfgfR8AAAAJ&hl=zh-CN" target="_blank"><i class="fab fa-google"></i></a></div>
-                    </div>
-                  </div>
-                  <div class="team-descr font-alt">
-                    <div class="team-name">Wenqi Ren</div>
-                    <div class="team-role">Chinese Academy of Sciences</div>
                   </div>
                 </div>
               </div>
@@ -584,123 +551,187 @@
                 <!-- dummy div balancing space -->
               <!-- </div> -->
 
-              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 20%" onclick="wow fadeInUp" >
+              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 16.6%" onclick="wow fadeInUp" >
                 <div class="team-item">
-                  <div class="team-image"><img src="assets/images/Zhiyuan_Mao.jpeg" alt="Speaker Photo" style="width:63%"/>
+                  <div class="team-image"><img src="assets/images/Nick_Chimitt.png" alt="Speaker Photo" style="width:63%"/>
                     <div class="team-detail">
-                      <div class="team-social"><a href="https://web.ics.purdue.edu/~mao114/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=FnTIbT0AAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
+                      <div class="team-social"><a href="https://nchimitt.github.io/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=1SMtjFIAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
                     </div>
                   </div>
                   <div class="team-descr font-alt">
-                    <div class="team-name">Zhiyuan Mao</div>
-                    <div class="team-role">Purdue University</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 20%" onclick="wow fadeInUp" >
-                <div class="team-item">
-                  <div class="team-image"><img src="assets/images/wchen.png" alt="Speaker Photo" style="width:75%"/>
-                    <div class="team-detail">
-                      <div class="team-social"><a href="https://chenwydj.github.io/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=RHOcEtsAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
-                    </div>
-                  </div>
-                  <div class="team-descr font-alt">
-                    <div class="team-name">Wuyang Chen</div>
-                    <div class="team-role">University of Texas, Austin</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
-              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 20%" onclick="wow fadeInUp" >
-                <div class="team-item">
-                  <div class="team-image"><img src="assets/images/abdullah.jpg" alt="Speaker Photo" style="width:75%"/>
-                    <div class="team-detail">
-                      <div class="team-social"><a href="https://abdullahalshabili.github.io/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.nl/citations?user=Lq4jj0AAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
-                    </div>
-                  </div>
-                  <div class="team-descr font-alt">
-                    <div class="team-name">Abdullah Al-Shabili</div>
+                    <div class="team-name">Nick Chimitt</div>
                     <div class="team-role">Purdue University</div>
                   </div>
                 </div>
               </div>
 
               <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
-              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 20%" onclick="wow fadeInUp" >
-                <div class="team-item">
-                  <div class="team-image"><img src="assets/images/Zhenyu_Wu.png" alt="Speaker Photo" style="width:75%"/>
-                    <div class="team-detail">
-                      <div class="team-social"><a href="https://wuzhenyusjtu.github.io/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?hl=en&user=XOjjlREAAAAJ" target="_blank"><i class="fab fa-google"></i></a></div>
+                <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 16.6%" onclick="wow fadeInUp" >
+                  <div class="team-item">
+                    <div class="team-image"><img src="assets/images/Xingguang_Zhang.jpg" alt="Speaker Photo" style="width:65%"/>
+                      <div class="team-detail">
+                        <div class="team-social"><a href="https://www.linkedin.com/in/xingguang-zhang-a43570147/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=hWeQHPYAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="team-descr font-alt">
+                      <div class="team-name">Xingguang Zhang</div>
+                      <div class="team-role">Purdue University</div>
                     </div>
                   </div>
-                  <div class="team-descr font-alt">
-                    <div class="team-name">Zhenyu Wu</div>
-                    <div class="team-role">Wormpex AI Research</div>
-                  </div>
                 </div>
-              </div>
 
-              <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
-              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 20%" onclick="wow fadeInUp" >
-                <div class="team-item">
-                  <div class="team-image"><img src="assets/images/Xingguang_Zhang.jpg" alt="Speaker Photo" style="width:65%"/>
-                    <div class="team-detail">
-                      <div class="team-social"><a href="https://www.linkedin.com/in/xingguang-zhang-a43570147/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=hWeQHPYAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
+                <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
+                  <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 16.6%" onclick="wow fadeInUp" >
+                    <div class="team-item">
+                      <div class="team-image"><img src="assets/images/Ajay.PNG" alt="Speaker Photo" style="width:70%"/>
+                        <div class="team-detail">
+                          <div class="team-social"><a href="https://ajay1994.github.io/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=I783HxYAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
+                        </div>
+                      </div>
+                      <div class="team-descr font-alt">
+                        <div class="team-name">Ajay Jaiswal</div>
+                        <div class="team-role">University of Texas, Austin</div>
+                      </div>
                     </div>
                   </div>
-                  <div class="team-descr font-alt">
-                    <div class="team-name">Xingguang Zhang</div>
-                    <div class="team-role">Purdue University</div>
-                  </div>
-                </div>
-              </div>
 
-              <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
-              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 21%" onclick="wow fadeInUp" >
-                <div class="team-item">
-                  <div class="team-image"><img src="assets/images/Ajay.PNG" alt="Speaker Photo" style="width:70%"/>
-                    <div class="team-detail">
-                      <div class="team-social"><a href="https://ajay1994.github.io/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=I783HxYAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
+                  <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
+                    <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 16.6%" onclick="wow fadeInUp" >
+                      <div class="team-item">
+                        <div class="team-image"><img src="assets/images/wes_robbins.jpg" alt="Speaker Photo" style="width:70%"/>
+                          <div class="team-detail">
+                            <div class="team-social"><a href="https://ajay1994.github.io/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=I783HxYAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
+                          </div>
+                        </div>
+                        <div class="team-descr font-alt">
+                          <div class="team-name">Wes Robbins</div>
+                          <div class="team-role">University of Texas, Austin</div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="team-descr font-alt">
-                    <div class="team-name">Ajay Jaiswal</div>
-                    <div class="team-role">University of Texas, Austin</div>
-                  </div>
-                </div>
-              </div>
 
-              <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
-              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 19%" onclick="wow fadeInUp" >
-                <div class="team-item">
-                  <div class="team-image"><img src="assets/images/Yunhao_Ba.jpg" alt="Speaker Photo" style="width:70%"/>
-                    <div class="team-detail">
-                      <div class="team-social"><a href="https://yhba-ucla.github.io/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=J35vv0cAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
-                    </div>
-                  </div>
-                  <div class="team-descr font-alt">
-                    <div class="team-name">Yunhao Ba</div>
-                    <div class="team-role">University of California, Los Angeles</div>
-                  </div>
-                </div>
-              </div>
+                    <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
+                      <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 16.6%" onclick="wow fadeInUp" >
+                        <div class="team-item">
+                          <div class="team-image"><img src="assets/images/yuecong_xu.jpg" alt="Speaker Photo" style="width:70%"/>
+                            <div class="team-detail">
+                              <div class="team-social"><a href="https://ajay1994.github.io/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=I783HxYAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
+                            </div>
+                          </div>
+                          <div class="team-descr font-alt">
+                            <div class="team-name">Yuecong Xu</div>
+                            <div class="team-role">Agency for Science, Technology and Research, Singapore</div>
+                          </div>
+                        </div>
+                      </div>
 
-              <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
-              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 20%" onclick="wow fadeInUp" >
-                <div class="team-item">
-                  <div class="team-image"><img src="assets/images/Howard_Zhang.jpg" alt="Speaker Photo" style="width:75%"/>
-                    <div class="team-detail">
-                      <div class="team-social"><a href="https://scholar.google.com/citations?user=tBlMihEAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
+                      <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
+                        <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 16.6%" onclick="wow fadeInUp" >
+                          <div class="team-item">
+                            <div class="team-image"><img src="assets/images/yang_jianfei.jpg" alt="Speaker Photo" style="width:70%"/>
+                              <div class="team-detail">
+                                <div class="team-social"><a href="https://ajay1994.github.io/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=I783HxYAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
+                              </div>
+                            </div>
+                            <div class="team-descr font-alt">
+                              <div class="team-name">Yang Jianfei</div>
+                              <div class="team-role">Nanyang Technological University, Singapore</div>
+                            </div>
+                          </div>
+                        </div>
+
+                  <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
+                    <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 17%" onclick="wow fadeInUp" >
+                      <div class="team-item">
+                        <div class="team-image"><img src="assets/images/yuan_shenghai.png" alt="Speaker Photo" style="width:70%"/>
+                          <div class="team-detail">
+                            <div class="team-social"><a href="https://ajay1994.github.io/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=I783HxYAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
+                          </div>
+                        </div>
+                        <div class="team-descr font-alt">
+                          <div class="team-name">Yuan Shenghai</div>
+                          <div class="team-role">Nanyang Technological University, Singapore</div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="team-descr font-alt">
-                    <div class="team-name">Howard Zhang</div>
-                    <div class="team-role">University of California, Los Angeles</div>
-                  </div>
-                </div>
-              </div>
+
+                    <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
+                      <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 16.6%" onclick="wow fadeInUp" >
+                        <div class="team-item">
+                          <div class="team-image"><img src="assets/images/yang_jianfei.jpg" alt="Speaker Photo" style="width:70%"/>
+                            <div class="team-detail">
+                              <div class="team-social"><a href="https://ajay1994.github.io/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=I783HxYAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
+                            </div>
+                          </div>
+                          <div class="team-descr font-alt">
+                            <div class="team-name">Yang Yizhuo</div>
+                            <div class="team-role">Nanyang Technological University, Singapore</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
+                        <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 16.6%" onclick="wow fadeInUp" >
+                          <div class="team-item">
+                            <div class="team-image"><img src="assets/images/hyoungseob_park.png" alt="Speaker Photo" style="width:70%"/>
+                              <div class="team-detail">
+                                <div class="team-social"><a href="https://ajay1994.github.io/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=I783HxYAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
+                              </div>
+                            </div>
+                            <div class="team-descr font-alt">
+                              <div class="team-name">Hyoungseob Park</div>
+                              <div class="team-role">Yale University</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
+                          <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 16.6%" onclick="wow fadeInUp" >
+                            <div class="team-item">
+                              <div class="team-image"><img src="assets/images/fengyu_yang.jpg" alt="Speaker Photo" style="width:70%"/>
+                                <div class="team-detail">
+                                  <div class="team-social"><a href="https://ajay1994.github.io/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=I783HxYAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
+                                </div>
+                              </div>
+                              <div class="team-descr font-alt">
+                                <div class="team-name">Fengyu Yang</div>
+                                <div class="team-role">Yale University</div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
+                            <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 16.6%" onclick="wow fadeInUp" >
+                              <div class="team-item">
+                                <div class="team-image"><img src="assets/images/Howard_Zhang.jpg" alt="Speaker Photo" style="width:70%"/>
+                                  <div class="team-detail">
+                                    <div class="team-social"><a href="https://ajay1994.github.io/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=I783HxYAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
+                                  </div>
+                                </div>
+                                <div class="team-descr font-alt">
+                                  <div class="team-name">Howard Zhang</div>
+                                  <div class="team-role">University of California, Los Angeles</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-2 col-sm-2 col-lg-2 col-xs-2" style="width: 12%" onclick="wow fadeInUp" > -->
+                              <div class="same-size-child mb-sm-20 wow fadeInUp col-md-3 col-sm-3 col-lg-3 col-xs-3" style="width: 16.6%" onclick="wow fadeInUp" >
+                                <div class="team-item">
+                                  <div class="team-image"><img src="assets/images/rishi_upadhyay.png" alt="Speaker Photo" style="width:70%"/>
+                                    <div class="team-detail">
+                                      <div class="team-social"><a href="https://ajay1994.github.io/" target="_blank"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=I783HxYAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></div>
+                                    </div>
+                                  </div>
+                                  <div class="team-descr font-alt">
+                                    <div class="team-name">Rishi Upadhyay</div>
+                                    <div class="team-role">University of California, Los Angeles</div>
+                                  </div>
+                                </div>
+                              </div>
+
+
+              
               <!-- <div class="same-size-child mb-sm-20 wow fadeInUp col-md-1 col-sm-1 col-lg-1 col-xs-1" onclick="wow fadeInUp" > -->
                 <!-- dummy div balancing space -->
               <!-- </div> -->
