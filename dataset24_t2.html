@@ -65,12 +65,7 @@
         <div class="container" style="width:100%">
           <div class="row"  style="padding: 40px 40px 0px 40px">
             <div class="col-sm-6 col-sm-offset-3">
-              <h2 class="module-title font-alt" style="margin: 0 0 20px">[Name of Dataset]</h2>
-              <!-- <h3 class="module-subtitle font-serif" style="margin: 0 0 20px"> -->
-                <!-- <a href="#subchallenge1" class="section-scroll btn btn-border-w btn-round">Sub-Challenge 1</a> -->
-                <!-- <a href="#subchallenge2" class="section-scroll btn btn-border-w btn-round">Sub-Challenge 2</a> -->
-              <!-- </h3> -->
-
+              <h2 class="module-title font-alt" style="margin: 0 0 20px">Challenge 2 Atmospheric Turbulence Mitigation Data</h2>
             </div>
           </div>
         </div>
@@ -79,73 +74,86 @@
       <section class="module" style="padding: 30px 0;" id='track2'>
         <div class="container" >
           <div class="row">
-            <div>
-<!--             <p style="float: right;"><img height="300" width="300" src="pics/ccdc_arl_logo.png"></p> -->
             <h3 class="module-title font-alt align-left" style="margin-bottom: 40px"><span class="fas fa-cloud-sun-rain"></span> Track 2: Atmospheric Turbulence Mitigation</h3>
-            </div>
             <div class="col-sm-12 col-md-12 col-lg-12">
               <div class="work-details">
-                <h4 class="work-details-title font-alt">About the Dataset</h4>
+                <h4 class="work-details-title font-alt">Training data and data augmentation provided to performers</h4>
                 <p>
-                  [1/2 sentence summary and a PDF (if applicable)]
-                  <!-- Each challenge features a different poor-visibility outdoor condition, -->
-                  <!-- and diverse training protocols (paired versus unpaired images, annotated versus unannotated, etc.). -->
+                  <b>[New to 2024 UG2].</b> As described in the challenge description, this year we are providing a data augmentation tool and simulated data. For more details, visit <a href='https://cvpr2024ug2challenge.github.io/track2.html' 
+                  style="color: #337ab7; text-decoration: underline">here</a>..
                 </p>
-
-                <!-- TODO -->
-<!--                 <div>
- -->                  <p><ul><li>Dataset and baseline report: <span class="font-serif"><a href="https://arxiv.org/pdf/2206.06427.pdf" target="_blank">your_link_here.pdf</a></span></li></ul></p>
-                <!-- </div> -->
-                <h5 class="work-details-title font-alt">Training & Evaluation</h5>
-
                 <p>
-                  Details
+                  <ul>Paper and simulator code: <a href='https://openaccess.thecvf.com/content/ICCV2021/papers/Mao_Accelerating_Atmospheric_Turbulence_Simulation_via_Learned_Phase-to-Space_Transform_ICCV_2021_paper.pdf' style="color: #337ab7; text-decoration: underline">paper</a>, <a href='https://github.itap.purdue.edu/StanleyChanGroup/TurbulenceSim_P2S' style="color: #337ab7; text-decoration: underline">code</a>
+                  </ul>
                 </p>
+                <h4 class="work-details-title font-alt">Evaluation</h4>
+                <p>
+                  <b>Please note the final testing data will be different from previous years.</b>
+                </p>
+                <h5 class="work-details-title font-alt">Subtrack1: Text Recognition through Atmospheric Turbulence. </h5>
+                  <p>
+                    In the dry run stage, there are 50 sequences of text images for validation. Each sequence will contain 100 turbulence distorted frames. 
+                    The task for the participants is to reconstruct a high quality image from these 100 distorted frames (you can use all or part of these 
+                    frames). The ground truth labels are provided. The evaluation metrics of this phase is the average accuracy of three existing scene text 
+                    recognition algorithms on the reconstruction result of the text patterns. 
+                  </p>
+                  <p>
+                    In the final testing stage, there will be 500 sequences of text images in the same format as the dry run phase. Each sequence 
+                    will contain 100 turbulence distorted frames. No ground truth labels will be available to participants. The ranking in this subtrack
+                    will be based on the average accuracy of three existing scene text recognition algorithms on the reconstruction result of the text patterns. 
+                  </p>
+                  <p>
+                    Get <a href='https://drive.google.com/file/d/1-UpUEk0rMLNCRW2bzsgVX-W6RqxYjdWJ/view?usp=share_link.html' 
+                    style="color: #337ab7; text-decoration: underline">dry run data </a> and <a href='https://drive.google.com/file/d/1DUqR2DJOFonKcZw7vH-P_ljZ9LCK0bXS/view?usp=share_link' 
+                    style="color: #337ab7; text-decoration: underline">starting kit</a>.
+                  </p>
+                  <!-- <p>
+                    Get <a href='https://drive.google.com/file/d/1BNNIKPXFPNX1LTKFOlO_Y-w2YZumj2nv/view?usp=sharing' 
+                    style="color: #337ab7; text-decoration: underline">final testing data </a>.
+                  </p> -->
+                <h5 class="work-details-title font-alt">Subtrack2: Coded Target Restoration through Atmospheric Turbulence</h5>
+                <p>
+                  In the dry run stage, there are 32 sequences of code images for validation. Each sequence will contain 100 turbulence distorted frames. 
+                  The task for the participants is also to reconstruct a single high quality image from these 100 distorted frames (you can use all or part of these 
+                  frames). No ground truth labels are provided and we expect participants to upload their restored results directly. The evaluation metrics 
+                  of this phase is the average bit score from the reconstruction result of the code patterns. 
+                </p>
+                <p>
+                  In the final testing stage, there will be 192 sequences of code images in the same format as the dry run phase. Each sequence 
+                  will contain 100 turbulence distorted frames. The ranking in this subtrack will be based on the average bit score estimated from 
+                  the reconstruction result. 
+                </p>
+                <p>
+                  Get <a href='https://drive.google.com/file/d/19KwFb41Tc8-NZGZPk3t4vZ0lN6kJQA76/view?usp=share_link' 
+                  style="color: #337ab7; text-decoration: underline">dry run data</a>.
+                </p>
+                <!-- <p>
+                  Get <a href='https://drive.google.com/file/d/1YMkey7VCre-E1NxpF8-30dvJCtvquGa5/view?usp=sharing' 
+                  style="color: #337ab7; text-decoration: underline">final testing data</a>.
+                </p> -->
+                <!-- <ul style="padding-left: 20px">
+                  <li>
+                    <strong>Download: </strong><span class="font-serif"><a style="color: #337ab7; text-decoration: underline" href="https://drive.google.com/file/d/1odYwg7l45CwGVHa3_wpN5EFuL1bAixdo/view?usp=sharing" target="_blank">Starting Kit</a></span> (including evaluation tools, dry run dataset, and a description of the utilities)
+                  </li>
+                  <li>
+                    <strong>Download NEW!: </strong><span class="font-serif"><a style="color: #337ab7; text-decoration: underline" href="https://drive.google.com/file/d/10lvd-Gla_LMEFBkezsmVo3MN8WtxYUMN/view?usp=sharing" target="_blank">Final Testing Data</a></span>
+                  </li>
+                  <li>
+                    <strong>Latest Release! Please find the complete dataset at: </strong><span class="font-serif"><a style="color: #337ab7; text-decoration: underline" href="https://github.com/i2lab-purdue/Turbulence-Text-Dataset/" target="_blank">Our site. </a></span>
+                  </li>
+                  <li>
+                    <strong>Codalab: </strong><span class="font-serif"><a style="color: #337ab7; text-decoration: underline" target="_blank" href="https://codalab.lisn.upsaclay.fr/competitions/1400">Codalab Link</a></span>
+                  </li>
+                  <li>
+                    <strong>Simulator Code: </strong><span class="font-serif"><a style="color: #337ab7; text-decoration: underline" target="_blank" href="https://github.itap.purdue.edu/StanleyChanGroup/TurbulenceSim_P2S">Reference Github Repository</a></span>
+                  </li>
+                </ul> -->
 
-                <!-- <h4 class="work-details-title font-alt" id='subchallenge1'>Sub-Challenge 1.1: Object Detection in the Hazy Condition</h4> -->
-                <!-- <p> -->
-                  <!-- We provide a set of 4,322 real-world hazy images collected from traffic surveillance, all labeled with object bounding boxes and categories -->
-                  <!-- (car, bus, bicycle, motorbike, person), as the main training and/or validation sets. -->
-                  <!-- We also release another set of 4,807 unannotated real-world hazy images collected from the same sources (and containing the same classes of traffic objects, -->
-                  <!-- though not annotated), which might be used at the participants’ discretization. There will be a hold-out testing set of 3,000 real-world hazy images, -->
-                  <!-- with the same classes of objected annotated. -->
-                <!-- </p> -->
-                <ul style="padding-left: 20px">
-                  <li>
-                    <strong>Release Date: </strong><span class="font-serif">January, 2024</span>
-                  </li>
-                  <li>
-                    <strong>Download Training Data: </strong>
-                    Link
-                    <!-- &nbsp;&nbsp; -->
-                    <!-- <span class="font-serif"><a style="color: #337ab7; text-decoration: underline" href="" target="_blank"><s>Baidu Wangpan Link</s></a></span> -->
-                  </li>
-                  <li>
-                    <strong>Download Dry-run data:</strong>
-                    Link
-                    <!-- &nbsp;&nbsp; -->
-                    <!-- <span class="font-serif"><a style="color: #337ab7; text-decoration: underline" href="" target="_blank"><s>Baidu Wangpan Link</s></a></span> -->
-                  </li>
-                  <!-- <li>
-                    <strong>Download Testing data:</strong>
-                    <span class="font-serif"><a style="color: #337ab7;"  href="https://drive.google.com/drive/folders/1slvGtlxKiiNgNnMmhAHeeI8O809AOn8Z?usp=sharing">Google drive link</a></span>
-                    <!-- &nbsp;&nbsp; -->
-                    <!-- <span class="font-serif"><a style="color: #337ab7; text-decoration: underline" href="" target="_blank"><s>Baidu Wangpan Link</s></a></span> -->
-                  </li> -->
-                  <li>
-                    <strong>Submission Format Example:</strong>
-                    Link
-                  </li>
-                  <li>
-                    <strong>Download Test images:</strong>
-                    Link
-                  </li>
-                </ul>
-
+                
                 <p style="text-align: justify;">
-                  If you have any questions about this challenge track please feel free to email <a style="color: #337ab7; text-decoration: underline" href="mailto:cvpr2024.ug2challenge@gmail.com">cvpr2024.ug2challenge@gmail.com</a>
+                  If you have any questions about this challenge track please feel free to email <a style="color: #337ab7; text-decoration: underline" href="mailto:cvpr2023.ug2challenge@gmail.com">cvpr2023.ug2challenge@gmail.com</a>
                 </p>
-
+                
               </div>
             </div>
           </div>
