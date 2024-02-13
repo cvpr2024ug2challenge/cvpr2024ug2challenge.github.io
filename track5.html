@@ -86,7 +86,7 @@
             <div class="col-sm-6 col-sm-offset-3">
               <!-- <p style="float: right;"><img height="300" width="300" src="pics/smoke_generator.png"></p> -->
               <h2 class="module-title font-alt" style="margin: 0 0 0px">Track 5: UAV Tracking and Pose-estimation</h2>
-              <h3 class="module-subtitle font-serif" style="margin: 0 0 20px"><a href="https://docs.google.com/forms/d/e/1FAIpQLSepaa-sOJRAgwCG7V-ubR-lmuJKZx6gCj-YftFLCDAmc3CmEA/viewform?usp=sf_link" target="_blank" class="section-scroll btn btn-border-w btn-round">Register for this track</a></h3>
+              <h3 class="module-subtitle font-serif" style="margin: 0 0 20px"><a href="https://forms.gle/X1tfkghQc24gGF4D6" target="_blank" class="section-scroll btn btn-border-w btn-round">Register for this track</a></h3>
             </div>
           </div>
         </div>
@@ -98,7 +98,7 @@
       <!-- GT-RAIN Dataset Figure -->
       <div class="container" style="padding-bottom: 20px">
         <figure>
-          <img src="assets/images/drone_temp.png" style="width:75%;height:75%;margin-left:auto;margin-right:auto;display:block;border: none;">
+          <img src="assets/images/MMAUD_description.png" style="width:75%;height:75%;margin-left:auto;margin-right:auto;display:block;border: none;">
           <figcaption style="width:80%;margin-left:auto;margin-right:auto;display:block;text-align: center;">
             <em>The method of collection for our Multi-Modal Anti-UAV Dataset. </em></figcaption>
         </figure>
@@ -109,41 +109,34 @@
         <div class="container">
           <div class="row" style="text-align: justify">
             <div class="col-sm-12 font-nat" style="font-size: 13pt">
-              <!--
-              <p>Images captured in adverse weather conditions significantly impact the performance of many vision tasks. Rain is a common weather phenomenon that introduces visual degradations to captured images and videos through partial occlusions of objects – in heavy rain, severe occlusion to the background. As most vision algorithms assume clear weather, with no interference of rain, their performance suffers. Deraining is the task of removing such visual degradations so that the images are better suited to the assumptions of downstream vision algorithms, as well as for aesthetic fruition. </p>
 
-              <p>UG<sup>2</sup>+ Track 3 aims to promote the development of novel single image deraining algorithms for real images. The competition will feature diverse and challenging scenarios that include (i) various types of rain conditions (i.e. long and short streaks, various densities and accumulation, with and without rain fog), (ii) large variety of background scenes from urban locations (i.e. buildings, streets, cityscapes) to natural scenery (i.e. forests, plains, hills), (iii) varying degrees of illumination from different times of day, and all of which are captured by (iv) cameras that cover a wide array of resolutions, noise levels, and intrinsic parameters. In a collaboration with the authors of GT-RAIN, we will introduce an additional 15 extra scenes set aside as a benchmark test set. The challenge will be split into three phases (training, validation, and testing), where data corresponding to each phase will be released to the participants. The validation set will consist of 5400 frames covering 18 scenes and the testing set 4500 frames covering 15 scenes. Unlike previous evaluation protocols that were limited to qualitative evaluation on real images, the submissions will be evaluated quantitatively using standard metrics like PSNR and SSIM. The ranking of algorithms will be determined based on evaluation scores on the testing set. The first place winner will be awarded $1000 USD, second place will be awarded $800 USD, and third place $500 USD. </p>
-              -->
+              <p>Unmanned aerial vehicles (UAVs), commonly referred to as drones, have become increasingly accessible and played an important role in various fields, such as transportation, photography, search and rescue, bring great benefits to the general public. However, the proliferation and capabilities of small commercial UAVs have also introduced multifaceted security challenges that extend beyond conventional concerns.</p>
 
-              <p>Recently, UAVs have become a major concern in frontline combat, contraband smuggling, and the endangerment of commercial aircraft, among other areas. Due to their compact size and quiet electric motors, they are difficult to detect by soldiers, law-enforcement and vehicles.</p>
+              <p>Over the past few years, there has been a remarkable rise of research interest with regards to anti-UAV system. Current anti-UAV solutions mainly use visual, radar, and radio frequency (RF) modalities. However, the identification of drones poses a significant challenge for sensors, such as cameras, particularly when drones operate at high altitudes or encounter extreme visual conditions. Therefore, these methods struggle to detect small drones due to their compact size, resulting in a reduced Radar Cross Section and smaller visual presence. Most importantly, the primary focus of the contemporary anti-UAV research is on object detection and 2D tracking, while neglecting the crucial integration of 3D trajectory estimation. This limitation significantly restricts the practical applications of anti-UAV systems in real-world.</p>
 
-              <p>This challenge aims to address the evolving challenge posed by small unmanned aerial vehicles in imagery and beyond based on a comprehensive Multi-Modal Anti-UAV Dataset (MMAUD). This challenge fills a critical gap in contemporary threat detection methodologies by focusing on drone detection, UAV-type classification, and trajectory estimation. What sets this challenge apart is its integration of diverse sensory inputs, including stereo vision, various LiDARs, radars, and audio arrays.</p>
+              <p>Hence, this challenge is designed with the objective of integrating features from diverse modalities to achieve robust 3D UAV position estimation, even in challenging conditions where certain sensors may fail to acquire valid information. This challenge specifically entails the utilization of fisheye camera images, millimeter-wave radar data, and lidar data obtained from a Livox Mid360 and a Livox Avia for both drone type classification and 3D position estimation task, with ground truth provided by a Leica Nova MS60 Multi-Station.</p>
 
-              <p>The newly introduced dataset in this challenge offers a unique overhead aerial perspective crucial for addressing real-world scenarios with greater fidelity than datasets or challenges captured from specific vantage points using thermal and RGB cameras. Additionally, this MMAUD dataset provides precise ground truth data generated by a survey-graded Leica total station, enhancing its credibility and enabling the confident refinement of algorithms and models—a feature unseen in other datasets or challenges. Our challenge closely simulates real-world scenarios by incorporating ambient sounds from heavy machinery. This approach enhances the solution's applicability, capturing the exact challenges faced during proximity to vehicular operations. This challenge is expected to play a pivotal role in advancing UAV threat detection, classification, trajectory estimation capabilities, and more.</p>
+              <p>The evaluation process will be conducted on a hold-out set of multimodal datasets derived from the MMAUD dataset, the first dataset dedicated to predicting the 3D position using multimodal data. Participants are required to utilize the provided test data to infer both the position and the type of the drone at the given timestamps and upload a <strong>.csv</strong> file following a specific format (including specific content and naming format) as specified in <a style="color: #337ab7; text-decoration: underline" href="assets/files/T5_README.md" target="_blank">this README file</a>.</p>
 
-              <p>Participants' solutions will be evaluated in terms of UAV type classification accuracy, 3D trajectory estimation accuracy, cost, and processing time. This evaluation comes from a real need for solutions that are affordable, quick, and accurate, which are highly desired. On the other hand, solutions that involve more sensors, are slow, or prone to errors are not wanted. Participants need to select balanced algorithms from the given options to successfully classify the UAV and estimate its trajectory.</p>
+              <p>The ranking criteria of this challenge will be based on i) Mean Square Loss (MSE Loss) with respect to the ground truth label of the testing set and ii) the Classification Accuracy of the type of UAVs of the testing set.</p>
 
-              <p>In the challenge, every participant is required to submit a fact sheet that outlines their methods, data modality used, runtime, model size, and hardware requirements, among other details. After the challenge, all fact sheets will be gathered into a final report to spotlight emerging trends and innovative techniques. Additionally, participants are invited to submit detailed manuscripts about their methods to the workshop.</p>
-
-                <!-- <ol>
-                  <li>(Semi-)Supervised Object Detection in Haze Conditions</li>
-                  <li>(Semi-)Supervised Face Detection in Low Light Conditions</li>
-                </ol> -->
+              <p>
+                <b>Organizing Committee:</b> <br>
+                Yuecong Xu (National University of Singapore)<br>
+                Shenghai Yuan (Nanyang Technological University, Singapore)<br>
+                Jianfei Yang (Nanyang Technological University, Singapore)<br>
+                Yizhuo Yang (Nanyang Technological University, Singapore)<br>
+                Xinhang Xu (Nanyang Technological University, Singapore)<br>
+                Thien-Minh Nguyen (Nanyang Technological University, Singapore)<br>
+                Tongxing Jin (Nanyang Technological University, Singapore)<br>
+                </p>
+  
+                <p>We would like to acknowledge the support from Nanyang Technological University, Singapore and National University of Singapore over the course of this Challenge as well as the construction of the MMAUD dataset. We would also like to specially thank Mr Tan Rong Sheng Zavier Jan and Mr Lee Dong Sheng from Avetics PTE LTD for the clearance of the legal documents and flying the drones.</p>
+                
+                <p style="padding-bottom: 40px"> References:<br>
+                    [1] Yuan S, Yang Y, Nguyen T H, et al. MMAUD: A Comprehensive Multi-Modal Anti-UAV Dataset for Modern Miniature Drone Threats[J]. arXiv preprint arXiv:2402.03706, 2024.
+                </p>
               
-              <!-- <p style="text-align: justify; ">
-                <!-- In all two sub-challenges, the participant teams are allowed to use external training data that are not mentioned above, including self-synthesized or self-collected data; -->
-                <!-- <b>but they must state so in their submissions ("Method description" section in Codalab)</b>. -->
-                <!-- Each leaderboard will be divided into two ranking lists: with and without external data. -->
-                <!-- The ranking criteria will be the Mean average precision (mAP) on each testing set, with Interception-of-Union (IoU) threshold as 0.5. -->
-                <!-- If the ratio of the intersection of a detected region with an annotated face region is greater than 0.5, a score of 1 is assigned to the detected region, and 0 otherwise. -->
-                <!-- When mAPs with IoU as 0.5 are equal, the mAPs with higher IoUs (0.6, 0.7, 0.8) will be compared sequentially. -->
-              <!-- </p> -->
-              	<!-- <ul> -->
-
-              <!-- <p style="text-align: justify">If you have any questions about this challenge track please feel free to email <a style="color: #337ab7; text-decoration: underline" href="mailto:GTRainChallenge@gmail.com">GTRainChallenge@gmail.com</a></p> -->
-
-              <!-- <p style="padding-bottom: 40px"> References:<br> -->
-                <!-- [1] Ba, Y., Zhang, H., Yang, E., Suzuki, A., Pfahnl, A., Chandrappa, C.C., de Melo, C.M., You, S., Soatto, S., Wong, A. and Kadambi, A., 2022. Not Just Streaks: Towards Ground Truth for Single Image Deraining. In European Conference on Computer Vision (pp. 723-740). Springer, Cham.<br>  </p> -->
             </div>
           </div>
 
