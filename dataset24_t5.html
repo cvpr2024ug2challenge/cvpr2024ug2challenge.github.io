@@ -65,12 +65,7 @@
         <div class="container" style="width:100%">
           <div class="row"  style="padding: 40px 40px 0px 40px">
             <div class="col-sm-6 col-sm-offset-3">
-              <h2 class="module-title font-alt" style="margin: 0 0 20px">[Name of Dataset]</h2>
-              <!-- <h3 class="module-subtitle font-serif" style="margin: 0 0 20px"> -->
-                <!-- <a href="#subchallenge1" class="section-scroll btn btn-border-w btn-round">Sub-Challenge 1</a> -->
-                <!-- <a href="#subchallenge2" class="section-scroll btn btn-border-w btn-round">Sub-Challenge 2</a> -->
-              <!-- </h3> -->
-
+              <h2 class="module-title font-alt" style="margin: 0 0 20px">Dataset for Track 5: UAV Tracking and Pose-estimation</h2>
             </div>
           </div>
         </div>
@@ -87,64 +82,48 @@
               <div class="work-details">
                 <h4 class="work-details-title font-alt">About the Dataset</h4>
                 <p>
-                  [1/2 sentence summary and a PDF (if applicable)]
-                  <!-- Each challenge features a different poor-visibility outdoor condition, -->
-                  <!-- and diverse training protocols (paired versus unpaired images, annotated versus unannotated, etc.). -->
+                  The MMAUD [1] dataset is a dataset dedicated for Unmanned aerial vehicles (UAVs) tracking and position estimation. It provides fisheye camera images, millimeter-wave radar data, and lidar data obtained from a Livox Mid360 and a Livox Avia, with ground truth provided by a Leica Nova MS60 Multi-Station. We intend to fuse data from different modalities to achieve robust UAV position estimation and classification even under challenging conditions.
                 </p>
 
                 <!-- TODO -->
 <!--                 <div>
- -->                  <p><ul><li>Dataset and baseline report: <span class="font-serif"><a href="https://arxiv.org/pdf/2206.06427.pdf" target="_blank">your_link_here.pdf</a></span></li></ul></p>
+ -->                  <p><ul><li>Dataset and baseline report: <span class="font-serif"><a href="https://arxiv.org/pdf/2402.03706.pdf" target="_blank">MMAUD Dataset Report</a></span></li></ul></p>
+                      <p>Note that for this challenge track we have updated the dataset described in the report. The dataset used in this challenge is sampled under a different scene but with the same experimental equipment.</p>
                 <!-- </div> -->
                 <h5 class="work-details-title font-alt">Training & Evaluation</h5>
 
                 <p>
-                  Details
+                  This dataset comprises 102 training sequences and 16 validation sequences, each spanning approximately 20 seconds and 5 seconds, respectively. The data collection involves four distinct UAV types: Mavic 3, M30, M300, and Pham. 4. The final 3D position estimation and classification test would be performed on a hold-out test set of multimodal data from the MMAU dataset. The hold-out test set contain the modality and drone type as the provided training set.
                 </p>
-
-                <!-- <h4 class="work-details-title font-alt" id='subchallenge1'>Sub-Challenge 1.1: Object Detection in the Hazy Condition</h4> -->
-                <!-- <p> -->
-                  <!-- We provide a set of 4,322 real-world hazy images collected from traffic surveillance, all labeled with object bounding boxes and categories -->
-                  <!-- (car, bus, bicycle, motorbike, person), as the main training and/or validation sets. -->
-                  <!-- We also release another set of 4,807 unannotated real-world hazy images collected from the same sources (and containing the same classes of traffic objects, -->
-                  <!-- though not annotated), which might be used at the participants’ discretization. There will be a hold-out testing set of 3,000 real-world hazy images, -->
-                  <!-- with the same classes of objected annotated. -->
-                <!-- </p> -->
                 <ul style="padding-left: 20px">
                   <li>
-                    <strong>Release Date: </strong><span class="font-serif">January, 2024</span>
+                    <strong>Paper: </strong><span class="font-serif"><a href="https://arxiv.org/pdf/2402.03706.pdf" target="_blank">ArXiv</a>
                   </li>
                   <li>
-                    <strong>Download Training Data: </strong>
-                    Link
-                    <!-- &nbsp;&nbsp; -->
-                    <!-- <span class="font-serif"><a style="color: #337ab7; text-decoration: underline" href="" target="_blank"><s>Baidu Wangpan Link</s></a></span> -->
+                    <strong>Release Date: </strong><span class="font-serif">Feburary, 2024</span>
                   </li>
                   <li>
-                    <strong>Download Dry-run data:</strong>
-                    Link
-                    <!-- &nbsp;&nbsp; -->
-                    <!-- <span class="font-serif"><a style="color: #337ab7; text-decoration: underline" href="" target="_blank"><s>Baidu Wangpan Link</s></a></span> -->
+                    <strong>Download (Google GDrive): </strong><span class="font-serif"><a style="color: #337ab7; text-decoration: underline" href="https://drive.google.com/drive/folders/1wk-c5xVX6701WNI_In1ba3_D4LSjRYv5?usp=sharing" target="_blank">Track 5 Training and Validation Data</a></span>
+                    <strong>Download (Baidu Netdisk): </strong><span class="font-serif"><a style="color: #337ab7; text-decoration: underline" href="https://pan.baidu.com/s/1omKiVnG4p_jmStBOmhoNcw?pwd=2024" target="_blank">Track 5 Training and Validation Data</a></span>
                   </li>
                   <!-- <li>
-                    <strong>Download Testing data:</strong>
-                    <span class="font-serif"><a style="color: #337ab7;"  href="https://drive.google.com/drive/folders/1slvGtlxKiiNgNnMmhAHeeI8O809AOn8Z?usp=sharing">Google drive link</a></span>
-                    <!-- &nbsp;&nbsp; -->
-                    <!-- <span class="font-serif"><a style="color: #337ab7; text-decoration: underline" href="" target="_blank"><s>Baidu Wangpan Link</s></a></span> -->
+                    <strong>Download NEW!: </strong><span class="font-serif"><a style="color: #337ab7; text-decoration: underline" href="https://drive.google.com/file/d/16wuxRPHsVQH2xHGedToz6yYsB6HCrYSz/view?usp=sharing" target="_blank">Track 5 Testing Data</a></span>
                   </li> -->
                   <li>
-                    <strong>Submission Format Example:</strong>
-                    Link
+                    <strong>Codabench: </strong><span class="font-serif"><a style="color: #337ab7; text-decoration: underline" target="_blank" href="https://www.codabench.org/competitions/2016/">Codabench Link</a>. Please view <a style="color: #337ab7; text-decoration: underline" href="rules24_t5.html">the Rules</a> for more details.</span>
                   </li>
                   <li>
-                    <strong>Download Test images:</strong>
-                    Link
+                    <strong>Submission Format Example:</strong>
+                    <a style="color: #337ab7; text-decoration: underline" href="assets/files/T5_README.md" target="_blank">README!</a>
                   </li>
                 </ul>
 
                 <p style="text-align: justify;">
-                  If you have any questions about this challenge track please feel free to email <a style="color: #337ab7; text-decoration: underline" href="mailto:cvpr2024.ug2challenge@gmail.com">cvpr2024.ug2challenge@gmail.com</a>
+                  If you have any questions about this challenge track please feel free to email <a style="color: #337ab7; text-decoration: underline" href="mailto:ug2.uav.track.ntu@gmail.com">ug2.uav.track.ntu@gmail.com</a> and <a style="color: #337ab7; text-decoration: underline" href="mailto:cvpr2024.ug2challenge@gmail.com">cvpr2024.ug2challenge@gmail.com</a>
                 </p>
+                <p style="padding-bottom: 40px"> References:<br>
+                  [1] Yuan S, Yang Y, Nguyen T H, et al. MMAUD: A Comprehensive Multi-Modal Anti-UAV Dataset for Modern Miniature Drone Threats[J]. arXiv preprint arXiv:2402.03706, 2024.
+              </p>
 
               </div>
             </div>
